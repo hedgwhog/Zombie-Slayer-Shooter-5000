@@ -1,0 +1,128 @@
+@font-face {
+	font-family: px;
+	src: url('px.ttf');
+} body {
+	font-family: px;
+	margin: 0;
+}
+
+#plr, .mmo {
+	position: fixed;
+
+	height: calc(64px * 2);
+	width: 64px;
+
+	background-size: 100% 100%;
+	background-image: url('textures/plr1.png');
+	transform-origin: center center;
+}
+
+#map, #mmofield {
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	background-size: 64px 64px;
+	outline: 1px solid black;
+
+	width: 800px;
+	height: 500px;
+
+} #map > * {
+	background-size: 100% 100%;
+	position: fixed;
+}
+
+* { image-rendering: pixelated; }
+.mt { background-image: url('textures/trophy.png'); } /* Trophy */
+.m-1 { background-image: url('textures/jonkler.webp'); } /* Jonkler */
+.m0 { background-image: url('textures/debug.png'); } /* Debug Block */
+.m1 { background-image: url('textures/grass.png'); } /* Grass */
+.m2 { background-image: url('textures/trih.png'); } /* Trih */
+.m3 { background-image: url('textures/rock.png'); } /* Rock */
+.m4 { background-image: url('textures/wire.png'); } /* Barb Wire */
+.m5 { background-image: url('textures/rune.png'); } /* Rune */
+.m6 { background-image: url('textures/slot.png'); } /* Slot */
+.m7 { background-image: url('textures/spawntext.png'); } /* Spawn Sign */
+.m8 { background-image: url('textures/sand.png'); } /* Sand */
+.m9 { background-image: url('textures/sandpile.png'); } /* Sandpile */
+.m10 { background-image: url('textures/bones.png'); } /* Bones */
+.m11 { background-image: url('textures/skull.png'); } /* Skull */
+.m12 { background-image: url('textures/pyramid.png'); } /* Pyramid */
+.m13 { background-image: url('textures/oasis.png'); } /* Oasis */
+.m14 { background-image: url('textures/cactus.png'); } /* Cactus */
+.m15 { background-image: url('textures/sno.png'); } /* Sno */
+.m16 { background-image: url('textures/snowman.png'); } /* Snowman */
+.m17 { background-image: url('textures/icelake.png'); } /* Ice Lake */
+.m18 { background-image: url('textures/icepillar.png'); } /* Ice Pillar */
+.m19 { background-image: url('textures/house.png'); } /* House */
+.m20 { background-image: url('textures/miniicepillar.png'); } /* Mini Ice Pillar */
+
+.mini {margin-top: 600px; width: 100px; display: grid; grid-template-columns: repeat(5, auto);}
+.mini > div {
+	background-color: red;
+	width: 20px;
+	height: 20px;
+} .floor {background-color: black !important;}
+.spawn {background-color: green !important;}
+
+/*.hitbox, #map > *  {outline: 1px solid red;}*/
+
+#profile {
+	position: fixed;
+	left: 4px;
+	top: 5px;
+
+	background-image: url('textures/profile.png');
+	width: 250px;
+	height: 90px;
+} #profile > * { position: fixed; }
+
+#equiped {
+	position: fixed;
+	left: 546px;
+	top: 5px;
+
+	background-image: url('textures/weapon.png');
+	width: 250px;
+	height: 90px;
+} #equiped > * { position: fixed; }
+
+#equiped img {
+	rotate: -20deg;
+	width: 80px;
+	height: 80px;
+
+	margin: 7px 0 0 170px;
+}
+
+#equiped span {
+	rotate: -20deg;
+	width: 80px;
+	height: 80px;
+
+	margin: 17px 0 0 130px;
+}
+
+.pfp {
+	background-image: url('textures/plr1.png');
+	width: 53px;
+	height: 51px;
+
+	left: 10px;
+	top: 12px;
+}
+
+.attack { transition: left 200ms linear, opacity 150ms }
+.zombie {width: 64px;}
+
+#wepon {
+	position: fixed;
+
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 50px;
+	height: 100px;
+
+	transform-origin: -15% center;
+}

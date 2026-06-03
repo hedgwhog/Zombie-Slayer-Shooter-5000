@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zombie Slayer Shooter 5000</title>
+    <style>
+        body {
+            background-image: url("background.jpg");
+            background-size: cover;
+            font-family: sans-serif;
+        }
+
+        iframe {
+            position: absolute;
+            left: calc(50vw - 400px);
+            top: calc(50vh - 250px);
+
+            width: 800px;
+            height: 500px;
+        }
+
+        span {
+            position: absolute;
+            left: calc(50vw - 400px + 150px);
+            top: calc(50vh - 250px + 520px);
+        }
+        /* Arrow Back */
+        .arrow {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        .arrow img {
+            width: 5vw;
+        }
+    </style>
+</head>
+<body>
+  <iframe src="./index.php"></iframe>
+    <span>[W][A][S][D]: Movement | [K]: Shoot | [L]: Drop Weapon | [J]: Unstuck</span>
+  <div class="arrow" onclick="window.location = '../index.php'"><img src="../images/icons/arrow-back-black.png"></div>
+</body>
+</html>

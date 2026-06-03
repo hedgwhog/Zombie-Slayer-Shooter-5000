@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/guide.css">
+    <title>Guide</title>
+
+    <style>
+        .page-text img {
+            width: 140px;
+            height: auto;
+            margin: 10px;
+        }
+
+        .page-text p {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="quote-container">
+        <i class="pin"></i>
+        <blockquote class="note title">
+            <span style="font-weight: bolder;">GUIDEBOOK</span><br>dit staat erin:
+        </blockquote>
+    </div>
+
+    <div class="quote-container">
+        <blockquote class="note guide">
+            <ul>
+                <li>Uitleg hoe je overleeft</li>
+                <li>Kans op spullen</li>
+                <li>Besturing</li>
+            </ul>
+        </blockquote>
+    </div>
+
+    <div class="quote-container">
+        <blockquote class="note text">
+            "Alles wat je moet weten, staat rustig uitgelegd in dit boekje."
+        </blockquote>
+    </div>
+
+    <div class="quote-container">
+        <a href="index.php">
+            <blockquote class="note exit">
+                Terug naar het spel
+            </blockquote>
+        </a>
+    </div>
+
+    <main>
+        <input type="checkbox" id="cover_checkbox">
+        <input type="checkbox" id="page1_checkbox">
+        <input type="checkbox" id="page2_checkbox">
+        <input type="checkbox" id="page3_checkbox">
+        <input type="checkbox" id="page4_checkbox">
+
+        <div id="flip_book">
+
+            <div class="front_cover">
+                <label for="cover_checkbox" id="cover"></label>
+            </div>
+
+            <!-- PAGINA 1 -->
+            <div class="page" id="page1">
+                <div class="front_page">
+                    <label for="page1_checkbox"></label>
+                    <div class="page-text">
+                        <h1>Epic Survival Guide</h1>
+
+                        <p>Welkom! Ik ga je rustig uitleggen hoe je dit spel kunt spelen.</p>
+
+                        <p>Er is een virus uitgebroken dat mensen verandert in zombies. Dat zijn gevaarlijke wezens die je aanvallen.</p>
+
+                        <p>Dokters hebben geprobeerd een medicijn te maken, maar dat is niet gelukt.</p>
+
+                        <p>Eén dokter probeerde zichzelf te redden nadat hij gebeten was, maar dat ging mis.</p>
+
+                        <p>Een andere dokter ontsnapte, maar veranderde later toch in een zombie.</p>
+
+                        <p>Dit gebeurde in het sneeuwgebied. Ze dachten dat het virus zich daar minder zou verspreiden, maar dat was niet waar.</p>
+
+                        <p>Jij moet nu proberen te overleven.</p>
+
+                        <p>Er zijn drie gebieden:</p>
+                        <p>- Bos</p>
+                        <p>- Woestijn</p>
+                        <p>- Sneeuw</p>
+
+                        <p>Elk gebied heeft andere zombies, dus let goed op.</p>
+
+                        <img src="images/guide/standard.png">
+                        <img src="images/guide/resized_64x128.png">
+                    </div>
+                </div>
+
+                <div class="back_page">
+                    <label for="page1_checkbox"></label>
+                    <div class="page-text">
+                        <h1>Zombies</h1>
+
+                        <p>In het bos kom je gewone zombies tegen. Deze zijn langzaam.</p>
+
+                        <p>Ze lijken misschien niet gevaarlijk, maar als ze je raken verlies je leven.</p>
+
+                        <p>Je komt ook speciale zombies tegen die sterker zijn.</p>
+
+                        <p>In de woestijn leven Hellmo-zombies. Deze zijn sneller en gevaarlijker.</p>
+
+                        <img src="images/guide/hellmo.png">
+
+                        <p>In het sneeuwgebied leven FrostBiters. Dit zijn de sterkste zombies.</p>
+
+                        <img src="images/guide/frostbiter.png">
+
+                        <p>Tip: blijf op afstand als je nog niet sterk genoeg bent.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PAGINA 2 -->
+            <div class="page" id="page2">
+                <div class="front_page">
+                    <label for="page2_checkbox"></label>
+                    <div class="page-text">
+                        <h1>Gebieden</h1>
+
+                        <p>Je begint in het bos. Dit is het makkelijkste gebied.</p>
+
+                        <p>Soms kun je meteen doorlopen naar de woestijn, maar meestal niet.</p>
+
+                        <p>In het bos kun je wapens en spullen vinden.</p>
+
+                        <p>Sommige sterke wapens liggen achter prikkeldraad.</p>
+
+                        <p>Als je daar doorheen loopt, verlies je leven.</p>
+
+                        <p>Doe dit alleen als je genoeg hartjes hebt.</p>
+
+                        <p>Om verder te komen moet je een trofee vinden.</p>
+
+                        <img src="images/guide/trophy.png">
+
+                        <p>Dit geldt ook voor de woestijn.</p>
+                    </div>
+                </div>
+
+                <div class="back_page">
+                    <label for="page2_checkbox"></label>
+                    <div class="page-text">
+                        <h1>Het einde</h1>
+
+                        <p>In het sneeuwgebied kom je de zombiedokter tegen.</p>
+
+                        <p>Dit is de dokter die eerst ontsnapte.</p>
+
+                        <img src="images/guide/zombiedoktor.png">
+
+                        <p>Hij is nu een sterke zombie en de eindbaas.</p>
+
+                        <p>Als je hem verslaat, heb je het spel gewonnen.</p>
+
+                        <p>Gefeliciteerd!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PAGINA 3 -->
+            <div class="page" id="page3">
+                <div class="front_page">
+                    <label for="page3_checkbox"></label>
+                    <div class="page-text">
+                        <h1>Wapens</h1>
+
+                        <p>Je kunt wapens vinden op de grond.</p>
+
+                        <p>Dit zijn vaak simpele wapens.</p>
+
+                        <p>Wil je betere wapens? Dan moet je risico nemen.</p>
+
+                        <p>De beste wapens liggen achter prikkeldraad.</p>
+
+                        <p>Zorg dat je genoeg leven hebt voordat je daar doorheen loopt.</p>
+
+                        <img src="images/guide/raygun.png">
+                        <img src="images/guide/rpg.png">
+
+                        <p>Deze wapens zijn erg sterk.</p>
+
+                        <img src="images/guide/melee.png">
+
+                        <p>Gebruik wat je hebt en speel slim.</p>
+                    </div>
+                </div>
+
+                <div class="back_page">
+                    <label for="page3_checkbox"></label>
+                    <div class="page-text">
+                        <h1>Tips</h1>
+
+                        <p>Neem rustig de tijd om het spel te leren.</p>
+
+                        <p>Loop niet zomaar op zombies af.</p>
+
+                        <p>Gebruik afstand als dat kan.</p>
+
+                        <p>Soms is wegrennen ook slim.</p>
+
+                        <p>Zo blijf je langer leven.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PAGINA 4 -->
+            <div class="page" id="page4">
+                <div class="front_page">
+                    <label for="page4_checkbox"></label>
+                    <div class="page-text">
+                        <h1>Besturing</h1>
+
+                        <p>Bewegen doe je met:</p>
+
+                        <p>W = omhoog</p>
+                        <p>S = omlaag</p>
+                        <p>A = links</p>
+                        <p>D = rechts</p>
+
+                        <p>Schieten doe je met K.</p>
+
+                        <p>Wapen weggooien doe je met L.</p>
+
+                        <p>Zit je vast? Druk op J.</p>
+
+                        <p>Oefen dit rustig.</p>
+                    </div>
+                </div>
+
+                <div class="back_page">
+                    <label for="page4_checkbox"></label>
+                    <div class="page-text">
+                        <h1>Succes</h1>
+
+                        <p>Je weet nu genoeg om te beginnen.</p>
+
+                        <p>Blijf rustig en kijk goed om je heen.</p>
+
+                        <p>Veel succes met overleven!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="back_cover"></div>
+
+        </div>
+    </main>
+    <div class="arrow" onclick="window.location = 'index.php'"><img src="images/icons/arrow-back.png"></div>
+</body>
+</html>
